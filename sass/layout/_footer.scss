@@ -1,0 +1,120 @@
+.footer {
+    background-color: var(--footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .address {
+    margin-top: 20px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  .address__item:not(:last-of-type) {
+    margin-bottom: 9px;
+  }
+  .address__map {
+    color: var(--letter-color);
+    transition: color var(--animation-function);
+      &:hover,
+      &:focus {
+        color: var(--brand-color);
+      }
+      }
+  
+  .address__mail {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--animation-function);
+      &:hover,
+      &:focus {
+        color: var(--brand-color);
+      }
+      }
+  
+  .address__tel {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--animation-function);
+      &:hover,
+      &:focus {
+        color: var(--brand-color);
+  }
+  }
+  
+  .footer__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--letter-color);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .footer-wrap {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .footer-address {
+    margin-right: 70px;
+    flex-grow: 1;
+  }
+
+  .footer-media {
+    margin-right: 93px;
+  }
+  
+  .footer__link {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--letter-color);
+    transition: background-color, color, var(--animation-function);
+      &:hover,
+      &:focus {
+      background-color: var(--brand-color);
+      color: var(--letter-color);
+    }
+    }
+  
+  .subscribe {
+    display: flex;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .input-wrapper .hero__button {
+    margin-top: 0; 
+    margin-left: 12px;
+  }
+
+  .input-wrapper .form__input {
+    width: 350px;
+    height: 50px;
+  }
+
+  .button__icon {
+    transition: fill var(--animation-function);
+    fill: var(--letter-color); 
+    margin-left: 10px;  
+  }
+  
+  .footer__button {
+    display:flex; 
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  .footer-subscription {
+    display: flex;
+    flex-direction: column;  
+  }
+
+  .footer__input {
+    outline: 0;
+    background-color: var(--footer-color);
+    color: var(--letter-color);
+  }
+  
