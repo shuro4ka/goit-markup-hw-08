@@ -2,12 +2,13 @@
 @import "./base/reset";
 @import "./base/common";
 @import "./utils/hidden";
+@import "./utils/mixins";
+
 
 //LAYOUT
 @import "./layout/container";
 @import "./layout/header";
 @import "./layout/media";
-// @import "./layout/section";
 @import "./layout/contacts";
 @import "./layout/hero";
 @import "./layout/features";
