@@ -23,15 +23,18 @@
     justify-content: center;
     margin-bottom: 30px;
   }
-
   .section-title {
     text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+    @include font (28px, 700, 1.17em, 0.03em)  
+    }
+  .section-title {
+    text-align: center;
     color: #212121;
     margin-bottom: 50px;
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.16;
+    // letter-spacing: 0.03em;
   }
   
   .features__text {
