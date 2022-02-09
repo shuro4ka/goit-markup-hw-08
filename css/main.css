@@ -53,8 +53,8 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .ghost {
@@ -383,6 +383,11 @@ body {
 
 .team__background {
   background-color: var(--background-color);
+}
+
+.team__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .team {
