@@ -5,11 +5,14 @@ body {
 
   .section {
       padding-top: 60px;
-      padding-bottom: 60px;  
+      padding-bottom: 60px; 
+      
+      @include desk {
+        padding-top: 94px;
+        padding-bottom: 94px;    
+      }
   }
 
-  // .section {
-  //   padding-top: 94px;
-  //   padding-bottom: 94px;
-  // }
+  
+
   
