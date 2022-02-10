@@ -1,53 +1,52 @@
 .features {
-     @include tab {
+     @include tel {
        display: flex;
+       flex-wrap: wrap;
   }
 }
   .features__item {
     @include tab {
       width: calc((100% - 60px) / 2);
-    } 
+      margin-right: 30px;
+      &:nth-child(4n) {
+         margin-right: 0;
+    }
     @include desk {
       width: calc((100% - 90px) / 4);
-      margin-right: 30px;
-        &:nth-child(4n) {
-          margin-right: 0;
     }
-        &:nth-last-child(- n + 4) {
-          margin-bottom: 0;
+    }  
+
+   .features__title{
+     margin-bottom: 10px;
+     @include font (14px, 700, 1.14em, 0.03em);
+     text-transform: uppercase;
+     @media screen and (max-width: 768px){
+      text-align: center;
+     }
     }
-    }
-  
+    
   .features-box {
-    @include desk{
-      width: 270px;
       height: 120px;
       background-color: #f5f4fa;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 30px;
-    }
-    
+      margin-bottom: 30px;  
   }
-  .section-title {
-    text-align: center;
-    @include font (28px, 700, 1.17em, 0.03em)  
-    }
+
   .section-title {
     text-align: center;
     color: #212121;
     margin-bottom: 50px;
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.16;
-    // letter-spacing: 0.03em;
-  }
-  
+    @include font (28px, 700, 1.17em, 0.03em);
+    }
+
   .features__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-transform: none;
+    margin-bottom: 30px;
     color: var(--text-color);
   }
+}
