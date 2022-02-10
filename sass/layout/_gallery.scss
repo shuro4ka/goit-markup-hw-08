@@ -1,14 +1,36 @@
+
 .gallery {
+  margin-bottom: -30px;
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin-left: -15px;
   }
   
-  .gallery__item {
-    flex-basis:calc((100% - 90px)/ 3);
-    margin: 15px;
-    transition: transform var(--animation-function);
+.gallery__item {
+  margin: 15px;
+  transition: transform var(--animation-function);
+//   }
+  // margin-bottom: 30px;
+    @include tab{
+    width: calc(100% / 2 - 30px);
+    // margin-left: 30px;
   }
+    @include desk {
+    width: calc(100% / 4 - 30px);
+  }
+}
+
+// .gallery {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: -15px;
+//   }
+  
+//   .gallery__item {
+//     flex-basis:calc((100% - 90px)/ 3);
+//     margin: 15px;
+//     transition: transform var(--animation-function);
+//   }
 
   .gallery__wrapper {
     position: relative;
