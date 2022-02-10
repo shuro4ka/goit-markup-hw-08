@@ -1,22 +1,22 @@
 .features {
-     @include tel {
-       display: flex;
-       flex-wrap: wrap;
+  margin-bottom: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  
+.features__item {
+  margin-bottom: 30px;
+    @include tab{
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+    @include desk {
+    width: calc(100% / 4 - 30px);
   }
 }
-  .features__item {
-    @include tab {
-      width: calc((100% - 60px) / 2);
-      margin-right: 30px;
-      &:nth-child(4n) {
-         margin-right: 0;
-    }
-    @include desk {
-      width: calc((100% - 90px) / 4);
-    }
-    }  
 
-   .features__title{
+   .features__title {
      margin-bottom: 10px;
      @include font (14px, 700, 1.14em, 0.03em);
      text-transform: uppercase;
@@ -49,4 +49,3 @@
     margin-bottom: 30px;
     color: var(--text-color);
   }
-}
