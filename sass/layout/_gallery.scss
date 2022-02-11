@@ -9,29 +9,15 @@
 .gallery__item {
   margin: 15px;
   transition: transform var(--animation-function);
-//   }
-  // margin-bottom: 30px;
-    @include tab{
-    width: calc(100% / 2 - 30px);
-    // margin-left: 30px;
+  //  margin-bottom: 30px;
+    @include tab {
+    width: calc(100% / 2 - 60px);
+    //  margin-left: 15px;
   }
     @include desk {
-    width: calc(100% / 4 - 30px);
+    width: calc(100% / 3 - 30px);
   }
 }
-
-// .gallery {
-//     display: flex;
-//     flex-wrap: wrap;
-//     margin: -15px;
-//   }
-  
-//   .gallery__item {
-//     flex-basis:calc((100% - 90px)/ 3);
-//     margin: 15px;
-//     transition: transform var(--animation-function);
-//   }
-
   .gallery__wrapper {
     position: relative;
     overflow: hidden;
@@ -44,7 +30,7 @@
     background-color: rgba(33, 150, 243, 0.9);
     font-size: 18px;
     line-height: 1.55;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     color:var(--letter-color);
     padding: 63px 24px;
     height: 100%;
@@ -54,18 +40,25 @@
     .gallery__link:focus & {
       transform: translateY(0);
       transition: var(--animation-function);
+      @include tab {
+        padding: 49px 24px;
     }
+      @include desk {
+        padding: 77px 24px ;
+      }
     }
+  }
 
   .gallery__box {
     padding-top: 20px;
-    padding-right: 24px;
     padding-bottom: 20px;
-    padding-left: 24px;
+    text-align:center;
     border-right: 2px solid #e5e5e5;
     border-left: 2px solid #e5e5e5;
     border-bottom: 2px solid #e5e5e5;
+  
   }
+  
   
   .gallery__title {
     font-weight: 700;
@@ -83,6 +76,7 @@
   }
   
   .gallery__link {
+    height: 404px;
     display: block;
     transition: box-shadow var(--animation-function);
     &:focus,
@@ -92,3 +86,15 @@
                 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     }
   }
+
+  // .gallery {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: -15px;
+//   }
+  
+//   .gallery__item {
+//     flex-basis:calc((100% - 90px)/ 3);
+//     margin: 15px;
+//     transition: transform var(--animation-function);
+//   }
