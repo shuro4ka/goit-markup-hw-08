@@ -739,7 +739,7 @@ body {
   color: var(--letter-color);
 }
 
-.btn.list {
+.btn {
   margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,7 +753,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .btn.list {
+  .btn {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: left;
@@ -798,32 +798,41 @@ body {
 }
 
 .gallery {
-  margin-bottom: -30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: -15px;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 .gallery__item {
-  margin: 15px;
   -webkit-transition: -webkit-transform var(--animation-function);
   transition: -webkit-transform var(--animation-function);
   transition: transform var(--animation-function);
   transition: transform var(--animation-function), -webkit-transform var(--animation-function);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 765px) {
+  .gallery__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .gallery__item {
-    width: calc(100% / 2 - 60px);
+    width: calc((100% - 60px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery__item {
-    width: calc(100% / 3 - 30px);
+    width: calc((100% - 90px) / 3);
   }
 }
 
@@ -877,6 +886,9 @@ body {
   border-right: 2px solid #e5e5e5;
   border-left: 2px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .gallery__title {
@@ -895,8 +907,14 @@ body {
 }
 
 .gallery__link {
-  height: 404px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow var(--animation-function);
   transition: -webkit-box-shadow var(--animation-function);
   transition: box-shadow var(--animation-function);
