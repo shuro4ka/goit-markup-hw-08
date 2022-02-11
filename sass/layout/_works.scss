@@ -1,17 +1,19 @@
-.works {
+.works__section {
+  @media screen and(max-width: 1200px){
+    display: none;    
+} 
+}
+.works { 
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
+
 .section-title {
   text-align: center;
   color: #212121;
   margin-bottom: 50px;
   @include font (28px, 700, 1.17em, 0.03em)  
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.16;
-    // letter-spacing: 0.03em;
   }
 
   .works__item {
@@ -32,7 +34,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:var(--letter-color); 
+    display: flex;
     align-items: center;
     justify-content: center;
-    // display: flex;
+   
   }
