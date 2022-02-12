@@ -1,11 +1,19 @@
   .contacts {
     display: flex;
     margin-left: auto;
+    @include tab {
+      flex-wrap: wrap; 
+    
+    }
   }
 
   .contacts__item:not(:last-of-type) {
     margin-right: 50px;
+    @include tab {
+      margin-bottom: 10px;  
+    }
   }
+
   
   .contacts__link {
     font-weight: 500;

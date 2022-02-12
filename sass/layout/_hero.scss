@@ -1,5 +1,4 @@
 .hero {
-  // @include tel {
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
@@ -14,7 +13,7 @@
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
-  }  
+   
   @include desk {
     text-align: center;
     background-color: #2f303a;
@@ -22,42 +21,18 @@
     padding-bottom: 200px;
     max-width: 1600px;
   }
-
-    // text-align: center;
-    // background-color: #2f303a;
-    // background-image: linear-gradient(
-    //     rgba(47, 48, 58, 0.4),
-    //     rgba(47, 48, 58, 0.4)
-    //   ),
-    //   url(../images/hero.jpg);
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
-    // max-width: 1600px;
-    // margin-left: auto;
-    // margin-right: auto;
-  
-  
+}
   .hero__title {
+    @include font (26px, 900, 1.61em, 0.06em); 
     text-transform: uppercase;
     color: var(--letter-color);
     text-align: center;
-    @include font (26px, 500, 1.61em, 0.06em); 
-    }
-  
+    
     @include desk {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
+      @include font (44px, 900, 1.36em, 0.06em);  
     }
-  
-    // text-transform: uppercase;
-    // color: var(--letter-color);
-    // text-align: center;
-    // @mixin font (26px, 900, 1.61em, 0.06em); 
-  
-  
+  }
+
   .hero__button {
     background-color: var(--brand-color);
     font-family: Roboto;
@@ -78,5 +53,3 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
   }
-  
-  

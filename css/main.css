@@ -96,6 +96,33 @@ body {
   }
 }
 
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--brand-color);
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.logo__dark {
+  color: var(--accent-color);
+}
+
+.logo__light {
+  color: var(--letter-color);
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -216,8 +243,21 @@ body {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .contacts__item:not(:last-of-type) {
   margin-right: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts__link {
@@ -265,28 +305,32 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  text-align: center;
-  background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
+  .hero {
+    text-align: center;
+    background-color: #2f303a;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
 }
 
 .hero__title {
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.61em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--letter-color);
   text-align: center;
-  font-size: 26px;
-  font-weight: 500;
-  line-height: 1.61em;
-  letter-spacing: 0.06em;
 }
 
 @media screen and (min-width: 1200px) {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  .hero__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36em;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero__button {
@@ -952,28 +996,46 @@ body {
 .backdrop {
   position: fixed;
   top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.14);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(157, 164, 189, 0.62);
   -webkit-transition: opacity 500ms, visibility 500ms;
   transition: opacity 500ms, visibility 500ms;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
 }
 
 .modal {
-  width: 528px;
+  width: 90vw;
   min-height: 500px;
-  background-color: var(--letter-color);
+  background-color: #ffffff;
   border-radius: 5px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  padding: 35px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 500px;
+  }
 }
 
 .modal__close {
