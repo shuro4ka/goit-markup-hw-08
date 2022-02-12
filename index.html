@@ -33,36 +33,36 @@
                 <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
             </ul>
-            </nav>
+        </nav>
 
-            <button type="button" class="menu-button__mobile" data-menu-open aria-label="Закрытие мобильного меню">
-                <svg class="menu-button__icon-close" width="40" height="40">
-                    <use href="./images/icons.svg#icon-menu"></use>
-                </svg>
-            </button>
+        <ul class="contacts">
+            <li class="contacts__item ">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                    <svg class="contacts-mail__icon" width="16px" height="12px">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com
+                </a>
+            </li>
 
-            <ul class="contacts">
-                <li class="contacts__item ">
-                    <a class="contacts__link" href="mailto:info@devstudio.com">
-                        <svg class="contacts-mail__icon" width="16px" height="12px">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com
-                    </a>
-                </li>
+            <li class="contacts__item ">
+                <a class="contacts__link" href="tel:+380961111111">
+                    <svg class="contacts-tel__icon" width="10px" height="16px">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>+38 096 111 11 11
+                </a>
+            </li>
+        </ul>
 
-                <li class="contacts__item ">
-                    <a class="contacts__link" href="tel:+380961111111">
-                        <svg class="contacts-tel__icon" width="10px" height="16px">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>+38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+        <button type="button" class="menu-button__mobile" data-menu-open aria-label="Закрытие мобильного меню">
+            <svg class="menu-button__icon-close" width="40" height="40">
+                <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
        
         </div>
 <!-- MOB MENU -->
 
-        <div class="mob-menu visually-hidden" data-menu>
+        <div class="mob-menu is-hidden" data-menu>
             <div class="container menu-container">
            
                 <div class="menu__top">
@@ -73,7 +73,7 @@
                     </svg>
                 </button> 
             
-             <nav class="nav-menu ">
+             <nav class="nav-menu__mob ">
                 <ul class="nav-mob-menu">
                     <li class="mob-menu__item"><a class="mob-menu__link nav__link--current" href="">Студия</a></li>
                     <li class="mob-menu__item"><a class="mob-menu__link" href="./portfolio.html">Портфолио</a></li>

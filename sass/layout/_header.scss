@@ -20,15 +20,18 @@
 
   .header {
     border-bottom: 1px solid #ececec;
+    
   }
 
   .header__container {
     display: flex;
     align-items: center;
-    justify-content: space-around;  
+    justify-content: space-between;  
+    height: 60px;
+      @include tel {
+        height: 80px;
+      }
     }
-
-    // height: 80px;
   
   .logo { 
     font-family: Raleway, sans-serif;
@@ -53,6 +56,13 @@
 
   .nav {
     display: flex; 
+  }
+
+  .nav-menu {
+    display: none;
+    @include tab {
+      display: block;
+    }
   }
 
   .nav__link {
@@ -96,12 +106,17 @@
     outline: 0;
     background-color: transparent;
     border: none;
+    display: block;
+    @include tab {
+      display: none;
+    }
     &:hover .menu-button__icon-close,
     &:focus .menu-button__icon-close {
       fill: var(--brand-color);
     }
+    
  }
- 
+
  .menu-button__icon-close {
   transition: fill var(--animation-function);
 }  
