@@ -1,8 +1,10 @@
   .contacts {
-    display: flex;
+    display: none;
+    // display: flex;
     margin-left: auto;
     @include tab {
       flex-wrap: wrap; 
+      
     
     }
   }

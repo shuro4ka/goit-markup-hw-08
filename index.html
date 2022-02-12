@@ -27,7 +27,7 @@
     <header class="header">
         <div class="header__container container">
         <a class="logo header__logo" href=" ">Web<span class="logo__dark">Studio</span></a>
-        <nav class="nav-menu header__menu">
+        <nav class="nav-menu ">
             <ul class="nav">
                 <li class="nav__item"><a class="nav__link nav__link--current" href="">Студия</a></li>
                 <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
@@ -35,8 +35,14 @@
             </ul>
             </nav>
 
-            <ul class="contacts ">
-                <li class="contacts__item header__menu">
+            <button type="button" class="menu-button__mobile js-close-menu" aria-label="Закрытие мобильного меню"></button>
+                <svg class="menu-button__icon-close" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+                </button>
+
+            <ul class="contacts">
+                <li class="contacts__item ">
                     <a class="contacts__link" href="mailto:info@devstudio.com">
                         <svg class="contacts-mail__icon" width="16px" height="12px">
                             <use href="./images/icons.svg#icon-envelope"></use>
@@ -44,7 +50,7 @@
                     </a>
                 </li>
 
-                <li class="contacts__item">
+                <li class="contacts__item ">
                     <a class="contacts__link" href="tel:+380961111111">
                         <svg class="contacts-tel__icon" width="10px" height="16px">
                             <use href="./images/icons.svg#icon-phone"></use>
@@ -52,8 +58,93 @@
                     </a>
                 </li>
             </ul>
+       
         </div>
-    </header>
+
+//------------MOB-MENU----------//
+
+        <div class="mob-menu">
+            <div class="container menu-container">
+            <div class="menu__top">
+
+                <button type="button" class="modal__close" data-modal-close>
+                    <svg class="icon__close" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-closex"></use>
+                    </svg>
+                </button> 
+            
+             <nav class="nav-menu ">
+                <ul class="nav-mob-menu">
+                    <li class="mob-menu__item"><a class="mob-menu__link nav__link--current" href="">Студия</a></li>
+                    <li class="mob-menu__item"><a class="mob-menu__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="mob-menu__item"><a class="mob-menu__link" href="">Контакты</a></li>
+                </ul>
+                </div>
+                
+                <div class="menu-bottom">
+                 <ul class="mob-contacts">
+                    <li class="mob-contacts__item ">
+                        <a class="mob-contacts__tel" href="tel:+380961111111">
+                            <!-- <svg class="mob-contacts-tel__icon" width="10px" height="16px">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg-->+38 096 111 11 11 
+                        </a>
+                    </li>
+
+                    <li class="mob-contacts__item ">
+                        <a class="mob-contacts__mail" href="mailto:info@devstudio.com">
+                            <!-- <svg class="mob-contacts-mail__icon" width="16px" height="12px">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>-->info@devstudio.com
+                        </a>
+                    </li>
+    
+                   
+                </ul>
+                
+                <ul class="mob-social">
+                    <li class="mob-social__item">
+                      <a
+                        class="link mob-social__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li class="mob-social__item">
+                      <a
+                        class="link mob-social__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Twitter</a
+                      >
+                    </li>
+                    <li class="mob-social__item">
+                        <a
+                          class="link mob-social__link"
+                          href=""
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Facebook</a
+                        >
+                      </li>
+                      <li class="mob-social__item">
+                        <a
+                          class="link mob-social__link"
+                          href=""
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >LinkedIn</a
+                        >
+                      </li>
+                  </ul>
+                
+                </div>
+            </div>
+
+         </header>
 
 
         <!-- <main> -->
@@ -375,7 +466,7 @@
                 </div>
     </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__close" data-modal-close>
                 <svg class="icon__close" width="18px" height="18px">
@@ -472,10 +563,11 @@
 
             </form>
         </div>
-    </div> -->
+    </div> --> -->
     
     <script src="./js/madal.js"></script>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
+   
 </body>
 
 </html>
