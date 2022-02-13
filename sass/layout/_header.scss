@@ -18,12 +18,12 @@
   color: var(--letter-color);
 }
 
-  .header {
+.header {
     border-bottom: 1px solid #ececec;
     
   }
 
-  .header__container {
+.header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;  
@@ -33,14 +33,14 @@
       }
     }
   
-  .logo { 
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--brand-color);
-  }
+.logo { 
+      font-family: Raleway, sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+      color: var(--brand-color);
+    }
 
   .header__logo {
     margin-right: 93px;
@@ -206,9 +206,22 @@
 .mob-social__link {
   @include font (18px, 500, 1.22em, 0.02em);
   color: var(--brand-color); 
+  position: relative;
+  &::after {
+    content:" ";
+    width: 2px;
+    height: 22px;
+    border-radius: 1px;
+    position: absolute;
+    background-color: rgba(33, 33, 33, 0.2);
+    left: 10;
+    bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
-@include tab {
-  
+
+
 
 .mob-menu.visually-hidden{
   transform: translate(100%);
@@ -218,5 +231,5 @@
   left: 100%;
 }
 
-}
+
   
