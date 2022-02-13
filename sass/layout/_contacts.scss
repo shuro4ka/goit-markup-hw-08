@@ -1,5 +1,4 @@
   .contacts {
-
     display: none;
     flex-wrap: wrap; 
     @include tab {
@@ -14,7 +13,6 @@
       margin-bottom: 10px;  
     }
   }
-
   
   .contacts__link {
     font-weight: 500;
@@ -30,6 +28,7 @@
       color: var(--brand-color);
     }
   }
+  
   .contacts-mail__icon {
     fill: currentColor;
     margin-right: 10px;

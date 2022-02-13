@@ -1,24 +1,27 @@
 .clients {
   margin-bottom: -30px;
-  display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+  display: flex;
+  justify-content: center;
+  @include desk {
+    margin-left: -30px;
   }
+ }
   
 .clients__item {
     margin-bottom: 30px;
-   @media screen and (max-width: 768px) {
-    width: calc(100% / 2 - 30px);
+    width: calc((100% - 60px) / 2);
+    justify-content: center;
     margin-left: 30px;
-  }
+   
 
   @include tab {
-    width: calc(100% / 3 - 30px);
-    margin-left: 30px;
+     width: calc((100% - 90px) / 3);
+    
   }
 
   @include desk {
-    width: calc(100% / 6 - 30px);
+    width: calc((100% - 180px) / 6);
 }
 }
    
@@ -29,7 +32,6 @@
 
   .clients__link {
     outline: 0;
-    width: 170px;
     height: 92px;
     background-color: #ffffff;
     border: 1px solid currentColor;
