@@ -17,36 +17,124 @@
 </head>
 <body>
 
-    <!-- <header class="header">
+    <header class="header">
         <div class="header__container container">
         <a class="logo header__logo" href=" ">Web<span class="logo__dark">Studio</span></a>
-        <nav class="nav-menu">
+        <nav class="nav-menu ">
             <ul class="nav">
                 <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
-                <li class="nav__item"><a class="nav__link nav__link--current" href="">Портфолио</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--current" >Портфолио</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
             </ul>
-            </nav>
+        </nav>
 
-            <ul class="contacts">
-                <li class="contacts__item">
-                    <a class="contacts__link" href="mailto:info@devstudio.com">
-                        <svg class="contacts-mail__icon" width="16px" height="12px">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com
-                    </a>
-                </li>
+        <ul class="contacts">
+            <li class="contacts__item ">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                    <svg class="contacts-mail__icon" width="16px" height="12px">
+                        <use href="./images/icons.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com
+                </a>
+            </li>
 
-                <li class="contacts__item">
-                    <a class="contacts__link" href="tel:+380961111111">
-                        <svg class="contacts-tel__icon" width="10px" height="16px">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>+38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            <li class="contacts__item ">
+                <a class="contacts__link" href="tel:+380961111111">
+                    <svg class="contacts-tel__icon" width="10px" height="16px">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>+38 096 111 11 11
+                </a>
+            </li>
+        </ul>
+
+        <button type="button" class="menu-button__mobile" data-menu-open aria-label="Закрытие мобильного меню">
+            <svg class="menu-button__icon-close" width="40" height="40">
+                <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </button>
+       
         </div>
-    </header> -->
+<!-- MOB MENU -->
+
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="container menu-container">
+           
+                <div class="menu__top">
+
+                <button type="button" class="modal__close" data-menu-close>
+                    <svg class="icon__close" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-closex"></use>
+                    </svg>
+                </button> 
+            
+             <nav class="nav-menu__mob ">
+                <ul class="nav-mob-menu">
+                    <li class="mob-menu__item"><a class="mob-menu__link mob__link--current" href="./index.html">Студия</a></li>
+                    <li class="mob-menu__item"><a class="mob-menu__link">Портфолио</a></li>
+                    <li class="mob-menu__item"><a class="mob-menu__link" href="">Контакты</a></li>
+                </ul>
+                </div>
+                
+                <div class="menu-bottom">
+                 <ul class="mob-contacts">
+                    <li class="mob-contacts__item">
+                        <a class="mob-contacts__tel" href="tel:+380961111111">
+                            +38 096 111 11 11 
+                        </a>
+                    </li>
+
+                    <li class="mob-contacts__item ">
+                        <a class="mob-contacts__mail" href="mailto:info@devstudio.com">
+                            info@devstudio.com
+                        </a>
+                    </li>
+    
+                   
+                </ul>
+                
+                <ul class="mob-social">
+                    <li class="mob-social__item">
+                      <a
+                        class="link mob-social__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li class="mob-social__item">
+                      <a
+                        class="link mob-social__link"
+                        href=""
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Twitter</a
+                      >
+                    </li>
+                    <li class="mob-social__item">
+                        <a
+                          class="link mob-social__link"
+                          href=""
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Facebook</a
+                        >
+                      </li>
+                      <li class="mob-social__item">
+                        <a
+                          class="link mob-social__link"
+                          href=""
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >LinkedIn</a
+                          >
+                      </li>
+                  </ul>
+                
+                </div>
+            </div>
+        </div>
+
+    </header>
      <main>
         <section class="section">
             <div class="container">
@@ -202,8 +290,8 @@
   
         </section>
     </main>
-    <!-- <footer class="footer">
-        <div class="container">
+    <footer class="footer">
+        <div class="container container-footer">
             <div class="footer-wrap">
 
                 <div class="footer-address">
@@ -248,6 +336,9 @@
 
                 <div class="footer-subscription">
                     <p class="footer__text">Подпишитесь на рассылку</p>
+
+                
+
                            
             <form class="footer-form">
                 <div class="input-wrapper">               
@@ -268,9 +359,9 @@
                 </div>
         </div>
                 </div>
-            <!-- </div>
-        </div> -->
-    <!-- </footer> --> -->
+    </footer>
+    <script src="./js/madal.js"></script> 
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>

@@ -2,7 +2,20 @@
     background-color: var(--footer-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
+    @include desk{
+      text-align: left;
+    }
   }
+
+@include desk {
+  .container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  }
+}
+
   .address {
     margin-top: 20px;
     font-style: normal;
@@ -10,9 +23,14 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
+
   .address__item:not(:last-of-type) {
+    margin-bottom: 8px;
+    @include desk{
     margin-bottom: 9px;
+    }
   }
+
   .address__map {
     color: var(--letter-color);
     transition: color var(--animation-function);
@@ -46,24 +64,57 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--letter-color);
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 20px;
     text-transform: uppercase;
-  }
+    @include tab {
+      margin-bottom: 30px;
+    }
+    }
+    
+  
   
   .footer-wrap {
+    justify-content: center;
+    @include tab {
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
+    @include desk{
     display: flex;
     align-items: baseline;
   }
-  
+}
+ 
   .footer-address {
-    margin-right: 70px;
-    flex-grow: 1;
-  }
+    margin-right: 0;
+    @include desk {
+      margin-right: 0;
+      flex-grow: 1;
+      // width: 50%;
+    } 
+    @include tab {
+      margin-right: 70px;
+    }
+}
+    .media{
+      margin-top: 20px;
+    }
 
-  .footer-media {
-    margin-right: 93px;
-  }
   
+    .footer-media {
+      @include desk {
+        margin-right: 93px;
+      }
+      @include tab {
+        .footer__text {
+          margin-top: 0;
+        }
+      }
+     
+}
+
   .footer__link {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--letter-color);
@@ -76,40 +127,60 @@
     }
   
   .subscribe {
+    @include desk {
     display: flex;
   }
-  
+}
   .input-wrapper {
+    @media screen and (min-width: 500px) and  (max-width: 1195px){
+     width: 100%;
+    //  justify-content: center;
+    //  align-items: center;
+    //  text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+      }
+    @include desk{
     display: flex;
     align-items: center;
-   
+    } 
   }
   
   .input-wrapper .hero__button {
+    @include desk {
     margin-top: 0; 
     margin-left: 12px;
   }
-
+  }
   .input-wrapper .form__input {
+    @include desk {
     width: 350px;
     height: 50px;
+  }
   }
 
   .button__icon {
     transition: fill var(--animation-function);
     fill: var(--letter-color); 
+    @include desk {
     margin-left: 10px;  
   }
-  
+}
+
   .footer__button {
+    @include desk{
     display:flex; 
     align-items: center;
     justify-content: center; 
   }
-  
+}
   .footer-subscription {
+    @include desk {
     display: flex;
     flex-direction: column;  
+  }
   }
 
   .footer__input {
@@ -117,4 +188,3 @@
     background-color: var(--footer-color);
     color: var(--letter-color);
   }
-  

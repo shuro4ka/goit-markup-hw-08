@@ -163,6 +163,10 @@
     }
  }
 
+ .mob-menu__link.mob__link--current {
+   color: var(--brand-color)
+ }
+
 .mob-contacts__tel {
   @include font (34px, 500, 1.18em, 0.02em);
     display: block;
