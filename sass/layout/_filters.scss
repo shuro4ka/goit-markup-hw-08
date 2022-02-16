@@ -1,26 +1,23 @@
 .btn {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     @include tab {
+      margin-bottom: 50px;
       justify-content: center;
-      align-items: center;
-
+      align-items: center; 
     }
-    // @media screen and (max-width: 768px){
-    //     flex-wrap: wrap;
-    //     justify-content:left;
-    //    }
+    @include desk{
+      margin-bottom: 30px;
+    }
     }
   
   .filter__item {
     margin-bottom: 15px; 
-  }
-  .filter__item:not(:last-child) {
+    &:not(:last-child) {
       margin-right: 8px;
-    }
-    
-  
+    }  
+  }
 
   .filter__button{
     border: transparent;

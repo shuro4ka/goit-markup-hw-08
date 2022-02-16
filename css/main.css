@@ -171,7 +171,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: -50px;
 }
 
 .nav-menu {
@@ -203,7 +202,7 @@ body {
   color: var(--brand-color);
 }
 
-.nav__item {
+.nav__item:not(:last-of-type) {
   margin-right: 50px;
 }
 
@@ -417,6 +416,13 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: 30px;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
     margin-left: auto;
   }
 }
@@ -427,8 +433,8 @@ body {
 
 .contacts__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--text-color);
   display: -webkit-box;
@@ -443,6 +449,13 @@ body {
 
 .contacts__link:hover, .contacts__link:focus {
   color: var(--brand-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts-mail__icon {
@@ -833,6 +846,10 @@ body {
   }
 }
 
+.footer__box:not(:last-child) {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 1200px) {
   .container {
     padding-left: 15px;
@@ -842,21 +859,11 @@ body {
 }
 
 .address {
-  margin-top: 20px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-.address__item:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-@media screen and (min-width: 1200px) {
-  .address__item:not(:last-of-type) {
-    margin-bottom: 9px;
-  }
+  margin-top: 20px;
 }
 
 .address__map {
@@ -895,21 +902,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--letter-color);
-  margin-top: 60px;
-  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) {
-  .footer__text {
-    margin-bottom: 30px;
-  }
-}
-
 .footer-wrap {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 @media screen and (min-width: 768px) {
@@ -982,6 +980,10 @@ body {
   }
 }
 
+.input-wrapper {
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 500px) and (max-width: 1195px) {
   .input-wrapper {
     width: 100%;
@@ -1041,6 +1043,10 @@ body {
   }
 }
 
+.footer-subscription {
+  margin-top: 60px;
+}
+
 @media screen and (min-width: 1200px) {
   .footer-subscription {
     display: -webkit-box;
@@ -1060,7 +1066,7 @@ body {
 }
 
 .btn {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1070,12 +1076,19 @@ body {
 
 @media screen and (min-width: 768px) {
   .btn {
+    margin-bottom: 50px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn {
+    margin-bottom: 30px;
   }
 }
 

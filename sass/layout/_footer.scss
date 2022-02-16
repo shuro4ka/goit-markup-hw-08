@@ -8,8 +8,11 @@
     }
   }
   
+  .footer__box:not(:last-child) {
+    margin-bottom: 60px;
+  }
 
-@include desk {
+  @include desk {
   .container{
   padding-left: 15px;
   padding-right: 15px;
@@ -17,19 +20,12 @@
   }
 }
 
-  .address {
-    margin-top: 20px;
+.address {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-  }
-
-  .address__item:not(:last-of-type) {
-    margin-bottom: 8px;
-    @include desk{
-    margin-bottom: 9px;
-    }
+    margin-top: 20px;
   }
 
   .address__map {
@@ -65,28 +61,28 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--letter-color);
-    margin-top: 60px;
-    margin-bottom: 20px;
+    // margin-top: 60px;
+    // margin-bottom: 20px;
     text-transform: uppercase;
-    @include tab {
-      margin-bottom: 30px;
-    }
+    // @include tab {
+    //   margin-bottom: 30px;
+    // }
     }
     
   
   
   .footer-wrap {
-    justify-content: center;
+    justify-content: space-around;
     @include tab {
       display: flex;
-      flex-wrap: wrap;
-      
+      flex-wrap: wrap;  
     }
     @include desk{
     display: flex;
     align-items: baseline;
   }
 }
+
  
   .footer-address {
     margin-right: 0;
@@ -131,6 +127,7 @@
   }
 }
   .input-wrapper {
+    margin-top: 20px;;
     @media screen and (min-width: 500px) and  (max-width: 1195px){
      width: 100%;
     //  justify-content: center;
@@ -169,13 +166,14 @@
 }
 
   .footer__button {
-    @include desk{
+    @include desk {
     display:flex; 
     align-items: center;
     justify-content: center; 
   }
 }
   .footer-subscription {
+    margin-top: 60px;
     @include desk {
     display: flex;
     flex-direction: column;  
