@@ -1,20 +1,26 @@
 .btn {
     margin-bottom: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    @media screen and (max-width: 768px){
-        flex-wrap: wrap;
-        justify-content:left;
-       }
+    flex-wrap: wrap;
+    @include tab {
+      justify-content: center;
+      align-items: center;
+
+    }
+    // @media screen and (max-width: 768px){
+    //     flex-wrap: wrap;
+    //     justify-content:left;
+    //    }
     }
   
-  .filter__item{
-    margin-right: 8px;
-    @media screen and (max-width: 768px){
-      margin-bottom: 15px;  
-    }
+  .filter__item {
+    margin-bottom: 15px; 
   }
+  .filter__item:not(:last-child) {
+      margin-right: 8px;
+    }
+    
+  
 
   .filter__button{
     border: transparent;

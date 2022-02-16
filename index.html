@@ -79,8 +79,9 @@
                     <li class="mob-menu__item"><a class="mob-menu__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="mob-menu__item"><a class="mob-menu__link" href="">Контакты</a></li>
                 </ul>
+             </nav>
                 </div>
-                
+              
                 <div class="menu-bottom">
                  <ul class="mob-contacts">
                     <li class="mob-contacts__item">
@@ -159,7 +160,7 @@
             <ul class="features">
                 <li class="features__item">
                     <div class="features-box">
-                        <svg class="features__icon" width="62.32px" height="70px">
+                        <svg class="features__icon" width="65.32px" height="70px">
                         <use href="./images/icons.svg#icon-icon1"></use>
                         </svg>
                     </div>
@@ -169,7 +170,7 @@
 
                 <li class="features__item">
                     <div class="features-box">
-                        <svg class="features__icon" width="62.32px" height="70px">
+                        <svg class="features__icon" width="65.32px" height="70px">
                             <use href="./images/icons.svg#icon-icon2"></use>
                         </svg>
                     </div>
@@ -180,7 +181,7 @@
 
                 <li class="features__item">
                     <div class="features-box">
-                        <svg class="features__icon" width="62.32px" height="70px">
+                        <svg class="features__icon" width="65.32px" height="70px">
                             <use href="./images/icons.svg#icon-icon3"></use>
                         </svg>
                     </div>
@@ -189,7 +190,7 @@
                 </li>
                 <li class="features__item">
                     <div class="features-box">
-                        <svg class="features__icon" width="62.32px" height="70px">
+                        <svg class="features__icon" width="65.32px" height="70px">
                             <use href="./images/icons.svg#icon-icon4"></use>
                         </svg>
                     </div>
@@ -544,7 +545,7 @@
         <div class="container container-footer">
             <div class="footer-wrap">
 
-                <div class="footer-address">
+                <div class="booter__box footer-address">
                     <a class="logo" href=" ">Web<span class="logo__light">Studio</span></a>
                     <address>
                     <ul class="address">
@@ -557,7 +558,7 @@
                     </address>
                 </div>  
 
-                <div class="footer-media">
+                <div class="footer__box footer-media">
                     <p class="footer__text">присоединяйтесь</p>
                     <ul class="media">
                         <li class="media__item">
@@ -584,7 +585,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-subscription">
+                <div class="footer-box footer-subscription">
                     <p class="footer__text">Подпишитесь на рассылку</p>
 
                 
@@ -598,15 +599,16 @@
                         name="e-mail"
                         id="subscribe"
                         placeholder="E-mail"/>
-                        <button class="hero__button footer__button" type="submit" data-modal-open type="button">Подписаться
+                        <button class="hero__button footer__button" type="submit" data-modal-open>Подписаться
                             <svg class="button__icon" width="24px" height="24px">
                                 <use href="./images/icons.svg#icon-send"></use>
                             </svg>
                         </button>
+                </div>
             </form> 
-                </div>
+            </div>
+            </div>       
         </div>
-                </div>
     </footer>
 
      <div class="backdrop is-hidden" data-modal>
@@ -671,11 +673,13 @@
                     </span>
                 </div>
 
+             
+
                 <div class="form-field">
                     <label for="user__text" class="form__label">Комментарий</label>
                     <textarea
                       name="user-text"
-                      id="user-text"
+                      id="user__text"
                       class="form__textarea"
                       placeholder="Введите текст"
                     ></textarea>                    
@@ -694,13 +698,13 @@
                           <use href="./images/icons.svg#icon-check"></use>
                         </svg>
                       </span>
-                      Соглашаюсь с рассылкой и принимаю &nbsp 
+                      Соглашаюсь с рассылкой и принимаю
                       <a href="" class="modal__link"> Условия договора</a></label
                     >
                 </div>
 
                 <div class="btn-wrap">
-                    <button class="hero__button modal__button" type="submit" data-modal-open type="button">Отправить</button>
+                    <button class="hero__button modal__button" type="submit" data-modal-open>Отправить</button>
                 </div>  
             </form>
         </div>

@@ -1,4 +1,5 @@
 .works__section {
+  padding-top: 0;
   @media screen and(max-width: 1200px){
     display: none;    
 } 
@@ -8,13 +9,6 @@
   flex-wrap: wrap;
   margin: -15px;
 }
-
-.section-title {
-  text-align: center;
-  color: #212121;
-  margin-bottom: 50px;
-  @include font (28px, 700, 1.17em, 0.03em)  
-  }
 
   .works__item {
     flex-basis:calc((100% - 90px)/ 3);

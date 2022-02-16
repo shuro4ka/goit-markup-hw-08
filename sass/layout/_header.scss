@@ -6,9 +6,14 @@
   letter-spacing: 0.03em;
   color: var(--brand-color);
 }
-.header__logo{
+.header__logo {
+  @include tab {
+    margin-right: 88px;
+  }
+  @include desk{
   margin-right: 93px;
 }
+}  
 
 .logo__dark {
   color: var(--accent-color);
@@ -28,34 +33,14 @@
     align-items: center;
     justify-content: space-between;  
     height: 60px;
-      @include tel {
-        height: 80px;
+    @include tab {
+    height: 80px;
       }
-    }
-  
-.logo { 
-      font-family: Raleway, sans-serif;
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 1.19;
-      letter-spacing: 0.03em;
-      color: var(--brand-color);
-    }
-
-  .header__logo {
-    margin-right: 93px;
-  }
-  
-  .logo__dark {
-    color: var(--accent-color);
-  }
-
-  .logo__light {
-    color: var(--letter-color);
-  }
+}
 
   .nav {
     display: flex; 
+    margin-right: -50px;
   }
 
   .nav-menu {
@@ -164,13 +149,13 @@
  }
 
  .mob-menu__link.mob__link--current {
-   color: var(--brand-color)
+   color: var(--brand-color);
  }
 
 .mob-contacts__tel {
   @include font (34px, 500, 1.18em, 0.02em);
     display: block;
-    color: var( --text-color);
+    color: var(--brand-color);
     &:hover,
     &:focus {
       color: var(--brand-color);  
@@ -207,7 +192,9 @@
   @include font (18px, 500, 1.22em, 0.02em);
   color: var(--brand-color); 
    position: relative;
- &::after {
+}
+
+.mob-social__link::after {
      content:" ";
       width: 2px;
       height: 22px;
@@ -219,6 +206,7 @@
       margin-left: 10px;
       margin-right: 10px;
 } 
+
     // &:last-of-type::after {
     //   content:" ";
     //   color: green; 
@@ -227,7 +215,7 @@
   //   .mob-social__link:last-of-type:after {
   //     content:" ";
   //     background-color: green;
-}
+
 .mob-menu.visually-hidden{
   transform: translate(100%);
 }

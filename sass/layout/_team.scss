@@ -30,17 +30,6 @@
   }
 }
 
-.section__title {
-  text-align: center;
-  color: #212121;
-  margin-bottom: 30px;
-  @include font (28px, 700, 1.17em, 0.03em);  
-  @include desk {
-     @include font (36px, 700, 1.16em, 0.03em);
-     margin-bottom: 50px;
-  }
-}
-
 .team__title {
   font-weight: 500;
   font-size: 16px;

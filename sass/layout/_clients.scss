@@ -1,5 +1,6 @@
 .clients {
   margin-bottom: -30px;
+  margin-left: -30px;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -24,11 +25,6 @@
     width: calc((100% - 180px) / 6);
 }
 }
-   
-   .section__title {
-    text-align: center;
-    @include font (28px, 700, 1.17em, 0.03em); 
-    } 
 
   .clients__link {
     outline: 0;

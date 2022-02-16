@@ -1,28 +1,29 @@
 
 .gallery {
+  margin-bottom: -30px;
+  @include tab {  
+  margin-bottom: -30px;
+  margin-left: -30px;
   flex-wrap: wrap;
   display: flex; 
-  margin-bottom: -30px;
-  @include tab {
-    margin-left: -30px;
   }
   }
   
 .gallery__item {
-  transition: transform var(--animation-function);
-    margin-left: 30px;
+    transition: transform var(--animation-function);
     margin-bottom: 30px;
-    @media screen and (max-width: 765px ){
-      justify-content: center;
-    }
+    // align-items: center;
+    // justify-content: center;
     
     @include tab {
+    margin-left: 30px;
+    margin-bottom: 30px;
     width: calc((100% - 60px) / 2);
     }
     @include desk {
     width: calc((100% - 90px) / 3);
     }
-}
+  }
   .gallery__wrapper {
     position: relative;
     overflow: hidden;
@@ -57,10 +58,11 @@
   .gallery__box {
     padding-top: 20px;
     padding-bottom: 20px;
-    text-align:center;
-    border-right: 2px solid #e5e5e5;
-    border-left: 2px solid #e5e5e5;
-    border-bottom: 2px solid #e5e5e5;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
     flex-grow: 1;
   }
   
