@@ -1,14 +1,14 @@
 .btn {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     display: flex;
     flex-wrap: wrap;
     @include tab {
-      margin-bottom: 50px;
+      margin-bottom: 35px;
       justify-content: center;
       align-items: center; 
     }
     @include desk{
-      margin-bottom: 30px;
+      margin-bottom: 15px;
     }
     }
   
@@ -19,14 +19,11 @@
     }  
   }
 
-  .filter__button{
+  .filter__button {
+    @include font(16px, 500, 1.62, 0.03em);
     border: transparent;
     padding: 6px 22px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
     font-family: inherit;
     background: #f5f4fa;
     color: var(--accent-color);
