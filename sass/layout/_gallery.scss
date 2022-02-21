@@ -30,13 +30,11 @@
   }
 
   .gallery__content {
+    @include font(18px, 400, 1.55, 0.03em);
     position: absolute;
     top: 0;
     left: 0;
     background-color: rgba(33, 150, 243, 0.9);
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
     color:var(--letter-color);
     padding: 63px 24px;
     height: 100%;

@@ -21,7 +21,8 @@
 }
 
 .address {
-  @include font(14px, 500, 1.71, 0.03em);
+  font-style: normal;
+  @include font(14px, 400, 1.71, 0.03em);
     margin-top: 20px;
   }
 
